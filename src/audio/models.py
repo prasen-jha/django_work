@@ -36,7 +36,7 @@ class PodCast(AudioBase):
         verbose_name_plural = 'podcasts'
 
     def get_absolute_url(self):
-        return f"song/{self.title}"
+        return f"podcast/{self.title}"
 
     def __str__(self):
         return self.title
@@ -52,7 +52,7 @@ class AudioBook(AudioBase):
         verbose_name_plural = 'audiobooks'
 
     def get_absolute_url(self):
-        return f"song/{self.title}"
+        return f"audiobook/{self.title}"
 
     def __str__(self):
         return self.title

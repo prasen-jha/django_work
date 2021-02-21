@@ -62,6 +62,3 @@ class PodCastTestCase(APITestCase):
         PodCast.objects.create(title='dummy', duration=1000, host='sten', participants=['a', 'k'])
         response = self.client.put("/podcast/3", data)
         self.assertRedirects(response, '/podcast/3/', status_code=301, target_status_code=200)
-
-
-
